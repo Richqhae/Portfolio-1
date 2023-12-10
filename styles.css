@@ -284,11 +284,25 @@ button{
     background-color: #d65108;
 }
 
+.foot p{
+    margin-top: 35px;
+    margin-right: 4px;
+
+}
+
 .head{
     background-color: #1d3557;
     text-align: center;
-    height: 50px;
+    height: 80px;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.head nav{
+    margin-top: 50px;
+    margin-left: 100px;
 }
 
 .socials{
