@@ -205,6 +205,8 @@ body{
     justify-items: center;
 }
 
+
+
 .web img{
     width: 400px;
     height: 300px;
@@ -233,14 +235,31 @@ button{
     cursor: pointer;
     margin-top: 30px;
 }
-.top{
+
+.headie{
+    display: flex;
     background-color: #1d3557;
+    height: 200px;
+
+}
+.headie nav{
+    margin-left: 800px;
+    margin-top: 150px;
+    font-size: 25px;
     
+}
+
+.headie a{
+    color: #d65108;
 }
 .top img{
     width: 250px;
     height: 200px;
     margin: 0 auto 0s 500px;
+}
+
+hr{
+    width: 100%;
 }
   
 /* This is the CSS for the upcoming Webinar*/
@@ -309,14 +328,75 @@ button{
     margin-left: 800px;
 }
 
-@media screen and (max-width:767px) {
-    .container {
-        width: 90%;
-        margin: 80px auto auto auto;
+
+
+/* Responsive media for  Mobile Devices (up to 767px) */
+@media only screen and (max-width: 767px) {
+    .home-head {
+        flex-direction: column;
     }
 
-    .top-container {
-        width: 90%;
-        margin: auto auto auto 5%;
+    .top-nav {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .logo-img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .container, .top-container {
+        width: auto;
+        margin: 20px;
+        float: none;
+    }
+
+    .count-down {
+        flex-direction: column;
+    }
+
+    .container-day, .container-hour, .container-minute, .container-second {
+        width: auto;
+        margin: 10px 0;
+    }
+
+    .container-img {
+        width: auto;
+        height: auto;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .but1 {
+        -ms-transform: none;
+        transform: none;
+    }
+
+    .headie nav {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .top img {
+        margin: 0 auto;
+    }
+
+    hr {
+        margin: 20px 0;
+    }
+
+    #pre_main, #up_main {
+        margin: 20px;
+    }
+
+    .dev button {
+        width: 100%;
+        margin: 10px 0 20px 0;
     }
 }
+
+
